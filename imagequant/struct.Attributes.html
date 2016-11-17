@@ -9,7 +9,9 @@
 
     <title>imagequant::Attributes - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -24,17 +26,17 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         <p class='location'><a href='index.html'>imagequant</a></p><script>window.sidebarCurrent = {name: 'Attributes', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
@@ -42,64 +44,80 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>imagequant</a>::<wbr><a class='struct' href=''>Attributes</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-702' class='srclink' href='../src/imagequant/lib.rs.html#140-142' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct Attributes {
-    // some fields omitted
-}</pre><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl <a class='struct' href='../imagequant/struct.Attributes.html' title='imagequant::Attributes'>Attributes</a></code></h3><div class='impl-items'><h4 id='method.new' class='method'><code>fn <a href='#method.new' class='fnname'>new</a>() -&gt; <a class='struct' href='../imagequant/struct.Attributes.html' title='imagequant::Attributes'>Attributes</a></code></h4>
-<h4 id='method.set_max_colors' class='method'><code>fn <a href='#method.set_max_colors' class='fnname'>set_max_colors</a>(&amp;mut self, value: <a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='enum' href='../imagequant/ffi/enum.liq_error.html' title='imagequant::ffi::liq_error'>liq_error</a></code></h4>
-<h4 id='method.set_min_posterization' class='method'><code>fn <a href='#method.set_min_posterization' class='fnname'>set_min_posterization</a>(&amp;mut self, value: <a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='enum' href='../imagequant/ffi/enum.liq_error.html' title='imagequant::ffi::liq_error'>liq_error</a></code></h4>
-<h4 id='method.set_quality' class='method'><code>fn <a href='#method.set_quality' class='fnname'>set_quality</a>(&amp;mut self, min: <a href='http://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>, max: <a href='http://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>) -&gt; <a class='enum' href='../imagequant/ffi/enum.liq_error.html' title='imagequant::ffi::liq_error'>liq_error</a></code></h4>
-<h4 id='method.set_speed' class='method'><code>fn <a href='#method.set_speed' class='fnname'>set_speed</a>(&amp;mut self, value: <a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='enum' href='../imagequant/ffi/enum.liq_error.html' title='imagequant::ffi::liq_error'>liq_error</a></code></h4>
-<h4 id='method.set_last_index_transparent' class='method'><code>fn <a href='#method.set_last_index_transparent' class='fnname'>set_last_index_transparent</a>(&amp;mut self, value: <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>)</code></h4>
-<h4 id='method.speed' class='method'><code>fn <a href='#method.speed' class='fnname'>speed</a>(&amp;mut self) -&gt; <a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></h4>
-<h4 id='method.max_colors' class='method'><code>fn <a href='#method.max_colors' class='fnname'>max_colors</a>(&amp;mut self) -&gt; <a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></h4>
-<h4 id='method.new_image' class='method'><code>fn <a href='#method.new_image' class='fnname'>new_image</a>&lt;'a&gt;(&amp;self, bitmap: <a href='http://doc.rust-lang.org/nightly/std/primitive.slice.html'>&amp;'a [</a><a href='http://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a><a href='http://doc.rust-lang.org/nightly/std/primitive.slice.html'>]</a>, width: <a href='http://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a>, height: <a href='http://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a>, gamma: <a href='http://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../imagequant/struct.Image.html' title='imagequant::Image'>Image</a>&lt;'a&gt;&gt;</code></h4>
-<h4 id='method.quantize' class='method'><code>fn <a href='#method.quantize' class='fnname'>quantize</a>(&amp;mut self, image: &amp;<a class='struct' href='../imagequant/struct.Image.html' title='imagequant::Image'>Image</a>) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../imagequant/struct.QuantizationResult.html' title='imagequant::QuantizationResult'>QuantizationResult</a>, <a class='enum' href='../imagequant/ffi/enum.liq_error.html' title='imagequant::ffi::liq_error'>liq_error</a>&gt;</code></h4>
-</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/ops/trait.Drop.html' title='core::ops::Drop'>Drop</a> for <a class='struct' href='../imagequant/struct.Attributes.html' title='imagequant::Attributes'>Attributes</a></code></h3><div class='impl-items'><h4 id='method.drop' class='method'><code>fn <a href='http://doc.rust-lang.org/nightly/core/ops/trait.Drop.html#method.drop' class='fnname'>drop</a>(&amp;mut self)</code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../imagequant/struct.Attributes.html' title='imagequant::Attributes'>Attributes</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../imagequant/struct.Attributes.html' title='imagequant::Attributes'>Attributes</a></code></h4>
-<h4 id='method.clone_from' class='method'><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div></section>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-126' class='srclink' href='../src/imagequant/src/lib.rs.html#141-143' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct Attributes { /* fields omitted */ }</pre><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl <a class='struct' href='../imagequant/struct.Attributes.html' title='imagequant::Attributes'>Attributes</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-155' class='srclink' href='../src/imagequant/src/lib.rs.html#200-266' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.new' class='method'><span id='new.v' class='invisible'><code>fn <a href='#method.new' class='fnname'>new</a>() -&gt; <a class='struct' href='../imagequant/struct.Attributes.html' title='imagequant::Attributes'>Attributes</a></code></span></h4>
+<h4 id='method.set_max_colors' class='method'><span id='set_max_colors.v' class='invisible'><code>fn <a href='#method.set_max_colors' class='fnname'>set_max_colors</a>(&amp;mut self, value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='enum' href='../imagequant/ffi/enum.liq_error.html' title='imagequant::ffi::liq_error'>liq_error</a></code></span></h4>
+<h4 id='method.set_min_posterization' class='method'><span id='set_min_posterization.v' class='invisible'><code>fn <a href='#method.set_min_posterization' class='fnname'>set_min_posterization</a>(&amp;mut self, value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='enum' href='../imagequant/ffi/enum.liq_error.html' title='imagequant::ffi::liq_error'>liq_error</a></code></span></h4>
+<h4 id='method.set_quality' class='method'><span id='set_quality.v' class='invisible'><code>fn <a href='#method.set_quality' class='fnname'>set_quality</a>(&amp;mut self, min: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>, max: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>) -&gt; <a class='enum' href='../imagequant/ffi/enum.liq_error.html' title='imagequant::ffi::liq_error'>liq_error</a></code></span></h4>
+<h4 id='method.set_speed' class='method'><span id='set_speed.v' class='invisible'><code>fn <a href='#method.set_speed' class='fnname'>set_speed</a>(&amp;mut self, value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='enum' href='../imagequant/ffi/enum.liq_error.html' title='imagequant::ffi::liq_error'>liq_error</a></code></span></h4>
+<h4 id='method.set_last_index_transparent' class='method'><span id='set_last_index_transparent.v' class='invisible'><code>fn <a href='#method.set_last_index_transparent' class='fnname'>set_last_index_transparent</a>(&amp;mut self, value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>)</code></span></h4>
+<h4 id='method.speed' class='method'><span id='speed.v' class='invisible'><code>fn <a href='#method.speed' class='fnname'>speed</a>(&amp;mut self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></span></h4>
+<h4 id='method.max_colors' class='method'><span id='max_colors.v' class='invisible'><code>fn <a href='#method.max_colors' class='fnname'>max_colors</a>(&amp;mut self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></span></h4>
+<h4 id='method.new_image' class='method'><span id='new_image.v' class='invisible'><code>fn <a href='#method.new_image' class='fnname'>new_image</a>&lt;'a,&nbsp;T:&nbsp;<a class='trait' href='https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html' title='core::marker::Copy'>Copy</a> + <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a>&gt;(&amp;self, bitmap: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>&amp;'a [</a>T<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>]</a>, width: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a>, height: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a>, gamma: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../imagequant/struct.Image.html' title='imagequant::Image'>Image</a>&lt;'a&gt;&gt;</code></span></h4>
+<h4 id='method.new_histogram' class='method'><span id='new_histogram.v' class='invisible'><code>fn <a href='#method.new_histogram' class='fnname'>new_histogram</a>(&amp;self) -&gt; <a class='struct' href='../imagequant/struct.Histogram.html' title='imagequant::Histogram'>Histogram</a></code></span></h4>
+<h4 id='method.quantize' class='method'><span id='quantize.v' class='invisible'><code>fn <a href='#method.quantize' class='fnname'>quantize</a>(&amp;mut self, image: &amp;<a class='struct' href='../imagequant/struct.Image.html' title='imagequant::Image'>Image</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../imagequant/struct.QuantizationResult.html' title='imagequant::QuantizationResult'>QuantizationResult</a>,&nbsp;<a class='enum' href='../imagequant/ffi/enum.liq_error.html' title='imagequant::ffi::liq_error'>liq_error</a>&gt;</code></span></h4>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Drop.html' title='core::ops::Drop'>Drop</a> for <a class='struct' href='../imagequant/struct.Attributes.html' title='imagequant::Attributes'>Attributes</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-138' class='srclink' href='../src/imagequant/src/lib.rs.html#160-166' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.drop' class='method'><span id='drop.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Drop.html#tymethod.drop' class='fnname'>drop</a>(&amp;mut self)</code></span></h4>
+<div class='docblock'><p>A method called when the value goes out of scope. <a href="https://doc.rust-lang.org/nightly/core/ops/trait.Drop.html#tymethod.drop">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../imagequant/struct.Attributes.html' title='imagequant::Attributes'>Attributes</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-152' class='srclink' href='../src/imagequant/src/lib.rs.html#192-198' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../imagequant/struct.Attributes.html' title='imagequant::Attributes'>Attributes</a></code></span></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-            <p>
-                Search functions by type signature (e.g.
-                <code>vec -> usize</code>)
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -110,7 +128,7 @@
     </script>
     <script src="../jquery.js"></script>
     <script src="../main.js"></script>
-    
-    <script async src="../search-index.js"></script>
+    <script src="../extra.js"></script>
+    <script defer src="../search-index.js"></script>
 </body>
 </html>

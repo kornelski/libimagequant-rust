@@ -1,1 +1,1 @@
-initSidebarItems({"fn":[["new",""]],"mod":[["ffi",""]],"struct":[["Attributes",""],["Color",""],["Image",""],["QuantizationResult",""]]});
+initSidebarItems({"fn":[["new",""]],"mod":[["ffi",""]],"struct":[["Attributes",""],["Color",""],["Histogram",""],["Image",""],["QuantizationResult",""]]});

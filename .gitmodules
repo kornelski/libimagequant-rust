@@ -1,0 +1,3 @@
+[submodule "merged with the libimagequant project"]
+	path = merged with the libimagequant project
+	url = https://github.com/ImageOptim/libimagequant
